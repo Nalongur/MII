@@ -1,0 +1,13 @@
+menu "MII BLE control service"
+
+config MII_BLE_CONTROL_SERVICE
+    bool "Start the experimental BLE control service"
+    depends on BT_NIMBLE_ENABLED
+    default n
+    help
+        Start the MII V7 development GATT service after safe-output and protocol
+        self-tests. The current link uses Secure Connections Just Works, which
+        encrypts traffic but does not authenticate the peer against MITM.
+        Keep disabled until pairing and application authorization are complete.
+
+endmenu

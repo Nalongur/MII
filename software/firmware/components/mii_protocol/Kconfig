@@ -1,0 +1,11 @@
+menu "MII protocol"
+
+config MII_PROTOCOL_STARTUP_SELF_TEST
+    bool "Run fixed protocol self-tests at startup"
+    default n
+    help
+        Compile and run allocation-free nanopb, session-state and stream-framing
+        self-tests after the board safe outputs are initialized. Intended for
+        development images; keep disabled in Release builds.
+
+endmenu

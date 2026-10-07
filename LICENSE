@@ -1,0 +1,18 @@
+MII uses separate licenses for software and hardware.
+
+Copyright (c) 2026 Nalongur
+
+- Original software and its documentation under software/: MIT.
+  Full text: LICENSES/MIT.txt
+- Original hardware design materials and documentation under hardware/:
+  CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0).
+  Full text: LICENSES/CERN-OHL-P-2.0.txt
+- Original repository introduction and publication documentation under docs/
+  and at the repository root: MIT, except the license texts themselves.
+
+Third-party code, build tools, generated files containing upstream notices,
+and their documentation retain their respective original licenses.
+In particular, software/third_party/nanopb/LICENSE.txt remains applicable.
+
+Hardware source location: https://github.com/Nalongur/MII/tree/main/hardware
+This licensing notice does not replace the full license texts.

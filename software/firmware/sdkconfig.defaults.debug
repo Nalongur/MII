@@ -1,0 +1,4 @@
+# Development profile: preserve useful source-level debugging behavior.
+CONFIG_COMPILER_OPTIMIZATION_DEBUG=y
+CONFIG_MII_PROTOCOL_STARTUP_SELF_TEST=y
+# CONFIG_MII_BLE_CONTROL_SERVICE is not set

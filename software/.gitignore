@@ -1,0 +1,65 @@
+# Operating-system and editor metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.vs/
+.idea/
+*.iml
+*.swp
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.old
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/keystore.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*_private.pem
+private*.key
+
+# ESP-IDF generated files
+/firmware/build/
+/firmware/build-debug/
+/firmware/build-release/
+/firmware/sdkconfig
+/firmware/sdkconfig.old
+/firmware/managed_components/
+
+# Android and Gradle generated files
+/android/.gradle/
+/android/.idea/
+/android/**/build/
+/android/captures/
+/android/.externalNativeBuild/
+/android/.cxx/
+/android/local.properties
+
+# Host tools and generated caches
+/build/
+/protocol/host-tests/kotlin/.gradle/
+/protocol/host-tests/kotlin/build/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+**/venv/
+*.py[cod]
+*.tsbuildinfo
+
+# Build products
+*.elf
+*.map
+*.bin
+*.uf2
+*.apk
+*.aab

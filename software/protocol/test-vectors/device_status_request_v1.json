@@ -1,0 +1,20 @@
+{
+  "name": "device_status_request_v1_minimal",
+  "schema": "mii.proto",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "message_id": 1,
+  "device_id": "MII-TEST-0001",
+  "sequence_number": 1,
+  "sent_at_unix_ms": 1,
+  "payload_type": 1,
+  "payload": {
+    "include_runtime_counters": true
+  },
+  "expected_payload_wire_hex": "0801",
+  "expected_wire_hex": "0a02080110011a0d4d49492d544553542d303030312001280130013a020801",
+  "expected_wire_length": 31
+}
