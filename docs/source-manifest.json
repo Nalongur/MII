@@ -1,0 +1,727 @@
+{
+  "date": "2026-10-07",
+  "source_commit": "b572f2a",
+  "files": [
+    {
+      "path": "software/.gitattributes",
+      "source_sha256": "b3cd33be476b22803770e30f3b712d7a1f674849875124446b48df8a65f83a15",
+      "published_sha256": "b3cd33be476b22803770e30f3b712d7a1f674849875124446b48df8a65f83a15"
+    },
+    {
+      "path": "software/.gitignore",
+      "source_sha256": "360a60174c502a6a34239a91be78119d6c00c6919a4bab9a183ade9dfbef0a63",
+      "published_sha256": "360a60174c502a6a34239a91be78119d6c00c6919a4bab9a183ade9dfbef0a63"
+    },
+    {
+      "path": "software/android/README.md",
+      "source_sha256": "193e7774a041731940ec67a7e181d01831d177ca7dd784c44fdb5bcdd6428e5b",
+      "published_sha256": "193e7774a041731940ec67a7e181d01831d177ca7dd784c44fdb5bcdd6428e5b"
+    },
+    {
+      "path": "software/android/app/build.gradle.kts",
+      "source_sha256": "323ab492430b8912d6342eb7a062eaf44233b036fdd3150bbfdd75ec105f934b",
+      "published_sha256": "323ab492430b8912d6342eb7a062eaf44233b036fdd3150bbfdd75ec105f934b"
+    },
+    {
+      "path": "software/android/app/proguard-rules.pro",
+      "source_sha256": "951b2ed3ff6b57d561d671ae0ebe75e8cc62cb878eaf771fc1eaef5910aca075",
+      "published_sha256": "951b2ed3ff6b57d561d671ae0ebe75e8cc62cb878eaf771fc1eaef5910aca075"
+    },
+    {
+      "path": "software/android/app/src/main/AndroidManifest.xml",
+      "source_sha256": "9e96621fc138f10f61a55e336997208a4ea184548973806aef100d7ccc9c4dfe",
+      "published_sha256": "9e96621fc138f10f61a55e336997208a4ea184548973806aef100d7ccc9c4dfe"
+    },
+    {
+      "path": "software/android/app/src/main/java/com/mii/app/MainActivity.kt",
+      "source_sha256": "3b8c31fca201ac026acb1f54bdbde7750487690c718bdf2c164ce0a7d6c12e89",
+      "published_sha256": "3b8c31fca201ac026acb1f54bdbde7750487690c718bdf2c164ce0a7d6c12e89"
+    },
+    {
+      "path": "software/android/app/src/main/java/com/mii/app/MiiApp.kt",
+      "source_sha256": "0d7872c8eb44ad5dd7712fa2807eaa84959b782be192bc827f64b1a87c26017b",
+      "published_sha256": "0d7872c8eb44ad5dd7712fa2807eaa84959b782be192bc827f64b1a87c26017b"
+    },
+    {
+      "path": "software/android/app/src/main/res/drawable/ic_mii.xml",
+      "source_sha256": "ab956f2378a6de1bd557a1019e66406001b2b089b07ce63c528598c731ce959d",
+      "published_sha256": "ab956f2378a6de1bd557a1019e66406001b2b089b07ce63c528598c731ce959d"
+    },
+    {
+      "path": "software/android/app/src/main/res/values/strings.xml",
+      "source_sha256": "3a0b76144990fe547b8682f7a4df665fb4735bf78dcddf570d493fb1064e6be1",
+      "published_sha256": "3a0b76144990fe547b8682f7a4df665fb4735bf78dcddf570d493fb1064e6be1"
+    },
+    {
+      "path": "software/android/app/src/main/res/values/themes.xml",
+      "source_sha256": "8a3f2d134e8628c77a8fc08ff57c1772ed6aab93fb0ff0466bc574b8272e20eb",
+      "published_sha256": "8a3f2d134e8628c77a8fc08ff57c1772ed6aab93fb0ff0466bc574b8272e20eb"
+    },
+    {
+      "path": "software/android/app/src/main/res/xml/data_extraction_rules.xml",
+      "source_sha256": "eda9dddce1e895de1efd716fe75e244187bf8f91a3bb7444c6ea1731e51c74a8",
+      "published_sha256": "eda9dddce1e895de1efd716fe75e244187bf8f91a3bb7444c6ea1731e51c74a8"
+    },
+    {
+      "path": "software/android/app/src/test/java/com/mii/app/AndroidProtocolTest.kt",
+      "source_sha256": "fbdf971ec5f3bfdf6ba91196956eb029dd9c83bb96c09fee1e9bae9e195a79dc",
+      "published_sha256": "fbdf971ec5f3bfdf6ba91196956eb029dd9c83bb96c09fee1e9bae9e195a79dc"
+    },
+    {
+      "path": "software/android/build.gradle.kts",
+      "source_sha256": "0a3fc035b2a76e11fc512a855d6c3aa9c28d5300654d521e0b3ca2f753a92b9a",
+      "published_sha256": "0a3fc035b2a76e11fc512a855d6c3aa9c28d5300654d521e0b3ca2f753a92b9a"
+    },
+    {
+      "path": "software/android/gradle.properties",
+      "source_sha256": "d83e273790ac248fa6c70b82fbdeec7d8146773136a9028845247cb63873ffee",
+      "published_sha256": "d83e273790ac248fa6c70b82fbdeec7d8146773136a9028845247cb63873ffee"
+    },
+    {
+      "path": "software/android/gradle/libs.versions.toml",
+      "source_sha256": "1e2b90217330b380cc264289fb1c6decca173ecf37c8ed22c059a959a31515cd",
+      "published_sha256": "1e2b90217330b380cc264289fb1c6decca173ecf37c8ed22c059a959a31515cd"
+    },
+    {
+      "path": "software/android/gradle/wrapper/gradle-wrapper.jar",
+      "source_sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+      "published_sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+    },
+    {
+      "path": "software/android/gradle/wrapper/gradle-wrapper.properties",
+      "source_sha256": "1b9cd6961ee86eea17b2f912bddb22030492db23fc6dff07da6c30eccaaab0c4",
+      "published_sha256": "1b9cd6961ee86eea17b2f912bddb22030492db23fc6dff07da6c30eccaaab0c4"
+    },
+    {
+      "path": "software/android/gradlew",
+      "source_sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3",
+      "published_sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3"
+    },
+    {
+      "path": "software/android/gradlew.bat",
+      "source_sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f",
+      "published_sha256": "2209f919a22528af59a2af2ad97e8d056cca18e39f7d87aa3fd549a73b180150"
+    },
+    {
+      "path": "software/android/settings.gradle.kts",
+      "source_sha256": "6ef5c3da4b812a1216ebb00074bff11fa0735252f8b6eb844a20f3ed60b33f08",
+      "published_sha256": "6ef5c3da4b812a1216ebb00074bff11fa0735252f8b6eb844a20f3ed60b33f08"
+    },
+    {
+      "path": "software/docs/MII_整体软件设计说明_v1.0.md",
+      "source_sha256": "c868628310d4c20a3aea7443d717050d475cd6ba7356b7ac6facbf111f88c9a0",
+      "published_sha256": "c868628310d4c20a3aea7443d717050d475cd6ba7356b7ac6facbf111f88c9a0"
+    },
+    {
+      "path": "software/docs/reuse-decisions.md",
+      "source_sha256": "29f9454e373e22b92646efc60756a05086a94d66db89cd49e6a6101f554c8d83",
+      "published_sha256": "29f9454e373e22b92646efc60756a05086a94d66db89cd49e6a6101f554c8d83"
+    },
+    {
+      "path": "software/firmware/CMakeLists.txt",
+      "source_sha256": "196510b3fc91a17f9b0aac914c19e8002483d19f3a8d899bb6e0299762160544",
+      "published_sha256": "196510b3fc91a17f9b0aac914c19e8002483d19f3a8d899bb6e0299762160544"
+    },
+    {
+      "path": "software/firmware/README.md",
+      "source_sha256": "3004eccd329b104663810b80ff7da8afe6d995dd73f108025783ecdaa8a37788",
+      "published_sha256": "3004eccd329b104663810b80ff7da8afe6d995dd73f108025783ecdaa8a37788"
+    },
+    {
+      "path": "software/firmware/components/board_v7/CMakeLists.txt",
+      "source_sha256": "777f215a870a70ddd7c0796e3dd40f96133266a404f1ced6cfc352c88b130f30",
+      "published_sha256": "777f215a870a70ddd7c0796e3dd40f96133266a404f1ced6cfc352c88b130f30"
+    },
+    {
+      "path": "software/firmware/components/board_v7/board_v7.cpp",
+      "source_sha256": "246e1dfa47a041f9e1fa73f1edd9703a8acb747e755e1fadb49e5f4014540823",
+      "published_sha256": "246e1dfa47a041f9e1fa73f1edd9703a8acb747e755e1fadb49e5f4014540823"
+    },
+    {
+      "path": "software/firmware/components/board_v7/include/mii/board_v7.hpp",
+      "source_sha256": "520d220fb8094a24cddebe0e386a2d7ebd31f8f14925f371189f4579872ec6ab",
+      "published_sha256": "520d220fb8094a24cddebe0e386a2d7ebd31f8f14925f371189f4579872ec6ab"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/CMakeLists.txt",
+      "source_sha256": "cf700b2a0420262d028624fb2459219a802a5ef10ff0beea19a600fc0c692454",
+      "published_sha256": "cf700b2a0420262d028624fb2459219a802a5ef10ff0beea19a600fc0c692454"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/README.md",
+      "source_sha256": "2e4386eaab3130e1eff4d21335696446bfe8327201dce8be665d57b22d9fd577",
+      "published_sha256": "2e4386eaab3130e1eff4d21335696446bfe8327201dce8be665d57b22d9fd577"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/auth_wire.cpp",
+      "source_sha256": "5d3c5851dbcdd30647ee1e70aed5ff55a0105ff84f4e5de9981a19f69c8b56a1",
+      "published_sha256": "5d3c5851dbcdd30647ee1e70aed5ff55a0105ff84f4e5de9981a19f69c8b56a1"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/idf_auth_crypto.cpp",
+      "source_sha256": "5242ceef816eec2b0f58779efda9e5c8224e773a07a63b99b48d191dda25dea8",
+      "published_sha256": "5242ceef816eec2b0f58779efda9e5c8224e773a07a63b99b48d191dda25dea8"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/idf_owner_store.cpp",
+      "source_sha256": "d2dade2f15b4db2d180ae7b2a592db9b94f061d9dbd889cf72c6613d1d8485cc",
+      "published_sha256": "d2dade2f15b4db2d180ae7b2a592db9b94f061d9dbd889cf72c6613d1d8485cc"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/include/mii/auth_wire.hpp",
+      "source_sha256": "10172cea31dd20c579f75f6b226d58aaa0bce158d978052db5c1726780037774",
+      "published_sha256": "10172cea31dd20c579f75f6b226d58aaa0bce158d978052db5c1726780037774"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/include/mii/idf_auth_crypto.hpp",
+      "source_sha256": "f36510335091b101ff051d3d8c86693b32d768b6d8f13611a2e19159a93c20f2",
+      "published_sha256": "f36510335091b101ff051d3d8c86693b32d768b6d8f13611a2e19159a93c20f2"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/include/mii/idf_owner_store.hpp",
+      "source_sha256": "096f03e5bd7854a5ed511cbcd888e9f128fa4a835c8fb35cac19682ad582d22a",
+      "published_sha256": "096f03e5bd7854a5ed511cbcd888e9f128fa4a835c8fb35cac19682ad582d22a"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/include/mii/numeric_comparison.hpp",
+      "source_sha256": "a2263bcc08050a543fcade80804a0df05f341d2ca3031436b693a302ad377035",
+      "published_sha256": "a2263bcc08050a543fcade80804a0df05f341d2ca3031436b693a302ad377035"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/include/mii/owner_record_codec.hpp",
+      "source_sha256": "816313a5e756ddbb796580368ef7fdbadc198ba3180b5e3da76c1de67bc4460c",
+      "published_sha256": "816313a5e756ddbb796580368ef7fdbadc198ba3180b5e3da76c1de67bc4460c"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/include/mii/owner_session.hpp",
+      "source_sha256": "37b87d6decf99a45ff8c8c6891dfec380dcec70f4ea42c98f586253dbb7533c5",
+      "published_sha256": "37b87d6decf99a45ff8c8c6891dfec380dcec70f4ea42c98f586253dbb7533c5"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/numeric_comparison.cpp",
+      "source_sha256": "d8667d92bb259e26d9a2c86b15ec24d370b0cd42acadbfc3fbb8339afc2bf202",
+      "published_sha256": "d8667d92bb259e26d9a2c86b15ec24d370b0cd42acadbfc3fbb8339afc2bf202"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/owner_record_codec.cpp",
+      "source_sha256": "ef63af1c49668a874222b13ddda6ea97220c25ec2de922737cad9726ac11d006",
+      "published_sha256": "ef63af1c49668a874222b13ddda6ea97220c25ec2de922737cad9726ac11d006"
+    },
+    {
+      "path": "software/firmware/components/mii_auth/owner_session.cpp",
+      "source_sha256": "67e7a10903d60a674e7ce592e8cf3566e0f69fa99792eee8e1dd10a402ed3859",
+      "published_sha256": "67e7a10903d60a674e7ce592e8cf3566e0f69fa99792eee8e1dd10a402ed3859"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/CMakeLists.txt",
+      "source_sha256": "116d744db993b48e7675833dd8db14de58d1c9b3771d53205d3beccd0c7fd50d",
+      "published_sha256": "116d744db993b48e7675833dd8db14de58d1c9b3771d53205d3beccd0c7fd50d"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/Kconfig",
+      "source_sha256": "ddb58558d3dafe743be3a11cc4bc3ada739813d61add8e0ca8c46b33696b9ff4",
+      "published_sha256": "ddb58558d3dafe743be3a11cc4bc3ada739813d61add8e0ca8c46b33696b9ff4"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/README.md",
+      "source_sha256": "891dd076330d747908e337f27355af5d448eb4ccd89364298d14d8bcc85ef894",
+      "published_sha256": "891dd076330d747908e337f27355af5d448eb4ccd89364298d14d8bcc85ef894"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/ble_control.cpp",
+      "source_sha256": "501a43bd90fa6517f796b41064f483138dc300c9f2d131e99f85bbad475baa81",
+      "published_sha256": "501a43bd90fa6517f796b41064f483138dc300c9f2d131e99f85bbad475baa81"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/ble_rx_session.cpp",
+      "source_sha256": "660968d14a15c2e9f8ad81097854e3aaf80d9c784cb912a20d6e43ae193da7a7",
+      "published_sha256": "660968d14a15c2e9f8ad81097854e3aaf80d9c784cb912a20d6e43ae193da7a7"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/ble_tx_session.cpp",
+      "source_sha256": "cba01a3be49d74c6dd3c86efb5a31692445a73fcd816cf444298a365a8c7a8fd",
+      "published_sha256": "cba01a3be49d74c6dd3c86efb5a31692445a73fcd816cf444298a365a8c7a8fd"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/include/mii/ble_control.hpp",
+      "source_sha256": "c69f9c0168d4f52551bcdc6719acfcbae7e3c8469a38e729df677bc9c92eb8f6",
+      "published_sha256": "c69f9c0168d4f52551bcdc6719acfcbae7e3c8469a38e729df677bc9c92eb8f6"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/include/mii/ble_rx_session.hpp",
+      "source_sha256": "a77af485b0e326ded3ceb84457ccf1af5330c8578bf71df3dbde9fa8d87904ff",
+      "published_sha256": "a77af485b0e326ded3ceb84457ccf1af5330c8578bf71df3dbde9fa8d87904ff"
+    },
+    {
+      "path": "software/firmware/components/mii_ble/include/mii/ble_tx_session.hpp",
+      "source_sha256": "c957c7aa90bcf560552b409e123eedbb9175a2b6d8b41aaab9f27e5bfcdcf945",
+      "published_sha256": "c957c7aa90bcf560552b409e123eedbb9175a2b6d8b41aaab9f27e5bfcdcf945"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/CMakeLists.txt",
+      "source_sha256": "f280a36e064f671c0db479963bb911e45d8f0dfc15f313331b51fa74f067c96f",
+      "published_sha256": "f280a36e064f671c0db479963bb911e45d8f0dfc15f313331b51fa74f067c96f"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/Kconfig",
+      "source_sha256": "d75141bc810c9171c80d38ada931a9511eed7ade38ebfdde0b98f76efcebddfa",
+      "published_sha256": "d75141bc810c9171c80d38ada931a9511eed7ade38ebfdde0b98f76efcebddfa"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/README.md",
+      "source_sha256": "553fda9c421b7cd7816cb643ce77daf389972a3d7a9e72bbd24434b448fc949e",
+      "published_sha256": "553fda9c421b7cd7816cb643ce77daf389972a3d7a9e72bbd24434b448fc949e"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/frame_codec.cpp",
+      "source_sha256": "5ab7452fa2aba608a006d95f689960c38d4b86450ca9d8618f1abdf51ccc5a1f",
+      "published_sha256": "5ab7452fa2aba608a006d95f689960c38d4b86450ca9d8618f1abdf51ccc5a1f"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/frame_ingress.cpp",
+      "source_sha256": "726e017b758f009fa499290b77efad87b92bbf2a397e5eab0be40fd28d43b917",
+      "published_sha256": "726e017b758f009fa499290b77efad87b92bbf2a397e5eab0be40fd28d43b917"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/generated/mii.pb.c",
+      "source_sha256": "88ce6f1a00f77f4bb6a679d664b6348922adfa6aa9ed9f1eb585ee538eea8072",
+      "published_sha256": "88ce6f1a00f77f4bb6a679d664b6348922adfa6aa9ed9f1eb585ee538eea8072"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/generated/mii.pb.h",
+      "source_sha256": "32fe291a0e57ddaee6d901241e1c202225c2cef7ef339d95847cb2c3fc9c778f",
+      "published_sha256": "32fe291a0e57ddaee6d901241e1c202225c2cef7ef339d95847cb2c3fc9c778f"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/include/mii/frame_codec.hpp",
+      "source_sha256": "ff1d81318c727ae09a9b902154473832c8c30fa2bed15c26f72d862d3a0fe378",
+      "published_sha256": "ff1d81318c727ae09a9b902154473832c8c30fa2bed15c26f72d862d3a0fe378"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/include/mii/frame_ingress.hpp",
+      "source_sha256": "18078dbe91dae0cfae652728cf313ec9166c599b9a8730f3f6c8408da3ffe151",
+      "published_sha256": "18078dbe91dae0cfae652728cf313ec9166c599b9a8730f3f6c8408da3ffe151"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/include/mii/protocol_codec.hpp",
+      "source_sha256": "8ba8810b9efb2c3f8cf678495c893fefb610fd7efc00d6bcb304a0a30c6a57f8",
+      "published_sha256": "8ba8810b9efb2c3f8cf678495c893fefb610fd7efc00d6bcb304a0a30c6a57f8"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/include/mii/protocol_self_test.hpp",
+      "source_sha256": "553371b0cc59ff53f98074a89a33dac40130b49ef07eb3a30d76f740e8e9dbff",
+      "published_sha256": "553371b0cc59ff53f98074a89a33dac40130b49ef07eb3a30d76f740e8e9dbff"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/include/mii/session_state.hpp",
+      "source_sha256": "7028b1f297428e9da8f9256d83c6c78b10eb0008c820e6dac924fd13238470c1",
+      "published_sha256": "7028b1f297428e9da8f9256d83c6c78b10eb0008c820e6dac924fd13238470c1"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/protocol_codec.cpp",
+      "source_sha256": "61b0d14f7d6782d280e77b2fdac86075101f1c388eb26294678d7b254647d787",
+      "published_sha256": "61b0d14f7d6782d280e77b2fdac86075101f1c388eb26294678d7b254647d787"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/protocol_self_test.cpp",
+      "source_sha256": "cd4835371e96fbefbfeb5a730dd9d01f5a213413dc955a11d1a7cd1de61ca435",
+      "published_sha256": "cd4835371e96fbefbfeb5a730dd9d01f5a213413dc955a11d1a7cd1de61ca435"
+    },
+    {
+      "path": "software/firmware/components/mii_protocol/session_state.cpp",
+      "source_sha256": "05629710c96285cd58cc154492b7984f88a88729784035f4e9c86ca90998328b",
+      "published_sha256": "05629710c96285cd58cc154492b7984f88a88729784035f4e9c86ca90998328b"
+    },
+    {
+      "path": "software/firmware/main/CMakeLists.txt",
+      "source_sha256": "8216dbb5c67c7329cf2afaa19e2db678dae7dac8fc171dbe25c2435160794a21",
+      "published_sha256": "8216dbb5c67c7329cf2afaa19e2db678dae7dac8fc171dbe25c2435160794a21"
+    },
+    {
+      "path": "software/firmware/main/app_main.cpp",
+      "source_sha256": "d58ac708363edd4f38da5bc018c6aefad1c19259c42c26407bbdca6ed20ddea4",
+      "published_sha256": "d58ac708363edd4f38da5bc018c6aefad1c19259c42c26407bbdca6ed20ddea4"
+    },
+    {
+      "path": "software/firmware/partitions_v7.csv",
+      "source_sha256": "f69c866439e1360bfff9478515ac1b647d436d53f7e63dc0995e8f9f64b16854",
+      "published_sha256": "f69c866439e1360bfff9478515ac1b647d436d53f7e63dc0995e8f9f64b16854"
+    },
+    {
+      "path": "software/firmware/sdkconfig.defaults.debug",
+      "source_sha256": "dd2b99ed9e907a5796e46acea695dd0ff70b7643af51ca363265550c804bf599",
+      "published_sha256": "dd2b99ed9e907a5796e46acea695dd0ff70b7643af51ca363265550c804bf599"
+    },
+    {
+      "path": "software/firmware/sdkconfig.defaults.release",
+      "source_sha256": "65c9ff7ed3cd57d219d7354bd70b48c35f1dfbe126271b891dd2374239848d0e",
+      "published_sha256": "65c9ff7ed3cd57d219d7354bd70b48c35f1dfbe126271b891dd2374239848d0e"
+    },
+    {
+      "path": "software/firmware/sdkconfig.defaults.v7_n8",
+      "source_sha256": "eb5d28a1ac573e1825ba98191be34b6703d2aeb21aed46b1bbf2ebbd098d5759",
+      "published_sha256": "eb5d28a1ac573e1825ba98191be34b6703d2aeb21aed46b1bbf2ebbd098d5759"
+    },
+    {
+      "path": "software/protocol/README.md",
+      "source_sha256": "b8e30a803d18cbce8a4c575ae33ef5cb591e4cc5473d699b1a71f9125a30899e",
+      "published_sha256": "b8e30a803d18cbce8a4c575ae33ef5cb591e4cc5473d699b1a71f9125a30899e"
+    },
+    {
+      "path": "software/protocol/authentication_v1.md",
+      "source_sha256": "5d1e35bb01bc15d061c99e5c20b2e30c0cbc2079fa0cd7088f5710f4cf239ad5",
+      "published_sha256": "5d1e35bb01bc15d061c99e5c20b2e30c0cbc2079fa0cd7088f5710f4cf239ad5"
+    },
+    {
+      "path": "software/protocol/framing_v1.md",
+      "source_sha256": "5b91467b148d14a8894251b8572e81f268e675eb07b8e56ace223ee69c9fca8e",
+      "published_sha256": "5b91467b148d14a8894251b8572e81f268e675eb07b8e56ace223ee69c9fca8e"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/auth_wire_test.cpp",
+      "source_sha256": "66e6006bc12c8992e115374b208e45705eec2b8ad6899c56ad65099fcbf34812",
+      "published_sha256": "66e6006bc12c8992e115374b208e45705eec2b8ad6899c56ad65099fcbf34812"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf-stubs/esp_bt.h",
+      "source_sha256": "5a7caec4f151c8c58dee274270a1e431165196680004a61f2561416c5c6c760e",
+      "published_sha256": "5a7caec4f151c8c58dee274270a1e431165196680004a61f2561416c5c6c760e"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf-stubs/esp_err.h",
+      "source_sha256": "e3c2f421686dbf20420990c19574b76d5886f3d524bc640fe8d67c0ef2441ead",
+      "published_sha256": "e3c2f421686dbf20420990c19574b76d5886f3d524bc640fe8d67c0ef2441ead"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf-stubs/esp_random.h",
+      "source_sha256": "282eade9220dfdbbee3fc66f8ab4cddc73316178f211a8d44af4c1c0d3a9a141",
+      "published_sha256": "282eade9220dfdbbee3fc66f8ab4cddc73316178f211a8d44af4c1c0d3a9a141"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf-stubs/mbedtls/mbedtls_config.h",
+      "source_sha256": "b714ac9e10bc32017344e03d2f44a1f634262f514621413b2c60a3d46f3dc5df",
+      "published_sha256": "b714ac9e10bc32017344e03d2f44a1f634262f514621413b2c60a3d46f3dc5df"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf-stubs/nvs.h",
+      "source_sha256": "bf3edf63c7aef3feb9b1038e84fd02fb443e94dfdd57478de7e623f2d7c8e9a1",
+      "published_sha256": "bf3edf63c7aef3feb9b1038e84fd02fb443e94dfdd57478de7e623f2d7c8e9a1"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf-stubs/nvs_flash.h",
+      "source_sha256": "1d8046c511df662dc0478c17f25370f54c43f512fd246cfdce91cbff58d2fb06",
+      "published_sha256": "1d8046c511df662dc0478c17f25370f54c43f512fd246cfdce91cbff58d2fb06"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf-stubs/nvs_sec_provider.h",
+      "source_sha256": "d9fe472d14b0e99e0df8a64555276fa621c93a9057d47cdc9a09fd2484428574",
+      "published_sha256": "d9fe472d14b0e99e0df8a64555276fa621c93a9057d47cdc9a09fd2484428574"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/idf_auth_crypto_test.cpp",
+      "source_sha256": "de3a881cbbbec874883ce3d89782173d6984c1aa638742dafe7c74bceee26f8f",
+      "published_sha256": "de3a881cbbbec874883ce3d89782173d6984c1aa638742dafe7c74bceee26f8f"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/numeric_comparison_test.cpp",
+      "source_sha256": "0b6c1f31fcd482b8b9be6a41df276f257efee1f464c0e0ad46447a40b0f28a51",
+      "published_sha256": "0b6c1f31fcd482b8b9be6a41df276f257efee1f464c0e0ad46447a40b0f28a51"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/owner_session_test.cpp",
+      "source_sha256": "811b706431f8532f5ed6cc25f856dff62066009a5d8b156c7925c2df6db8f031",
+      "published_sha256": "811b706431f8532f5ed6cc25f856dff62066009a5d8b156c7925c2df6db8f031"
+    },
+    {
+      "path": "software/protocol/host-tests/auth/owner_store_test.cpp",
+      "source_sha256": "3c02d2210c0b993bf3f07049ac26710ef0c0c9c5628ca2ac20d9e33ccd927a0c",
+      "published_sha256": "3c02d2210c0b993bf3f07049ac26710ef0c0c9c5628ca2ac20d9e33ccd927a0c"
+    },
+    {
+      "path": "software/protocol/host-tests/ble/ble_rx_session_test.cpp",
+      "source_sha256": "86fc729fbe410bb7f84b7e1bb1cd5b4f9315961a9a66533b9168c947b75ab5d3",
+      "published_sha256": "86fc729fbe410bb7f84b7e1bb1cd5b4f9315961a9a66533b9168c947b75ab5d3"
+    },
+    {
+      "path": "software/protocol/host-tests/ble/ble_tx_session_test.cpp",
+      "source_sha256": "06ff460bdbac4123c20f4f97cf42ab160ab28d9eb1fadcff924771a8de3a393d",
+      "published_sha256": "06ff460bdbac4123c20f4f97cf42ab160ab28d9eb1fadcff924771a8de3a393d"
+    },
+    {
+      "path": "software/protocol/host-tests/cpp/protocol_vector_test.cpp",
+      "source_sha256": "548aa42ec57ba2e54cf5219b6ed020b4908dba599bd6254ac8559db64b0c9dcb",
+      "published_sha256": "548aa42ec57ba2e54cf5219b6ed020b4908dba599bd6254ac8559db64b0c9dcb"
+    },
+    {
+      "path": "software/protocol/host-tests/frame/frame_codec_test.cpp",
+      "source_sha256": "4d1dea01761636c5695c1451d07e413a87a7336692a379c8418a9d3046ae8355",
+      "published_sha256": "4d1dea01761636c5695c1451d07e413a87a7336692a379c8418a9d3046ae8355"
+    },
+    {
+      "path": "software/protocol/host-tests/frame/frame_ingress_test.cpp",
+      "source_sha256": "59aeef43bba2c1d7995e9575679d007de505b69350489fac65f7c65badd279db",
+      "published_sha256": "59aeef43bba2c1d7995e9575679d007de505b69350489fac65f7c65badd279db"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/build.gradle.kts",
+      "source_sha256": "7a06fba7bd0d7e74c9d8dc73181b1b59efe40ea80062fb715b852016e64d0cbc",
+      "published_sha256": "7a06fba7bd0d7e74c9d8dc73181b1b59efe40ea80062fb715b852016e64d0cbc"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/gradle/wrapper/gradle-wrapper.jar",
+      "source_sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+      "published_sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/gradle/wrapper/gradle-wrapper.properties",
+      "source_sha256": "1b9cd6961ee86eea17b2f912bddb22030492db23fc6dff07da6c30eccaaab0c4",
+      "published_sha256": "1b9cd6961ee86eea17b2f912bddb22030492db23fc6dff07da6c30eccaaab0c4"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/gradlew",
+      "source_sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3",
+      "published_sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/gradlew.bat",
+      "source_sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f",
+      "published_sha256": "2209f919a22528af59a2af2ad97e8d056cca18e39f7d87aa3fd549a73b180150"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/settings.gradle.kts",
+      "source_sha256": "39bfbbbb9b41a738188d79b19dc9b536383ae2b3e24ba668c0373b0c487f099e",
+      "published_sha256": "39bfbbbb9b41a738188d79b19dc9b536383ae2b3e24ba668c0373b0c487f099e"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/src/main/kotlin/com/mii/protocol/AuthVectorCheck.kt",
+      "source_sha256": "179884d35ec8878692c5b154ffcd8b876e36660de19135dc77975d20890c65d1",
+      "published_sha256": "179884d35ec8878692c5b154ffcd8b876e36660de19135dc77975d20890c65d1"
+    },
+    {
+      "path": "software/protocol/host-tests/kotlin/src/main/kotlin/com/mii/protocol/ProtocolVectorCheck.kt",
+      "source_sha256": "9075d7f664acc8d30b296b0147b1381bedac5f3b30d3b8df48ac6462dfdec851",
+      "published_sha256": "9075d7f664acc8d30b296b0147b1381bedac5f3b30d3b8df48ac6462dfdec851"
+    },
+    {
+      "path": "software/protocol/host-tests/nanopb/nanopb_vector_test.cpp",
+      "source_sha256": "afcc48b3fb915f8e322f3141f7c1882b53bf4fa91b6b0f345383f57acb002aa6",
+      "published_sha256": "afcc48b3fb915f8e322f3141f7c1882b53bf4fa91b6b0f345383f57acb002aa6"
+    },
+    {
+      "path": "software/protocol/host-tests/nanopb/requirements.txt",
+      "source_sha256": "5d84eb7139b77b2c4004dbf85599784771811a8576bc4047ce9a27d621e01baa",
+      "published_sha256": "5d84eb7139b77b2c4004dbf85599784771811a8576bc4047ce9a27d621e01baa"
+    },
+    {
+      "path": "software/protocol/host-tests/session/session_state_test.cpp",
+      "source_sha256": "84537f59ca698fdb3d0cac46b2c2fd2dfcd22edb094e0351ebb90302260fd054",
+      "published_sha256": "84537f59ca698fdb3d0cac46b2c2fd2dfcd22edb094e0351ebb90302260fd054"
+    },
+    {
+      "path": "software/protocol/mii.options",
+      "source_sha256": "8ff44fe42a041fdfed08abb4c095f942bb6ae3ffde78b95ed2f8f2dafed21535",
+      "published_sha256": "8ff44fe42a041fdfed08abb4c095f942bb6ae3ffde78b95ed2f8f2dafed21535"
+    },
+    {
+      "path": "software/protocol/mii.proto",
+      "source_sha256": "fe00773f253e69d4719afe8a81431465605093c32d71aaa316a68c5936ce8b25",
+      "published_sha256": "fe00773f253e69d4719afe8a81431465605093c32d71aaa316a68c5936ce8b25"
+    },
+    {
+      "path": "software/protocol/test-vectors/authentication_v1.json",
+      "source_sha256": "7d80b32cab06fd3c25c90017ecb06f93a9472169e8a2b95fee3284c70ce853fa",
+      "published_sha256": "7692785f5fafc99296402e8708f236e5840e7ce95c10416cee0f72f6ba893ae0"
+    },
+    {
+      "path": "software/protocol/test-vectors/device_status_request_v1.json",
+      "source_sha256": "c8c1331c4f0700582d5301acce75e539a862cd78e34815497651d90669a70a55",
+      "published_sha256": "c8c1331c4f0700582d5301acce75e539a862cd78e34815497651d90669a70a55"
+    },
+    {
+      "path": "software/protocol/test-vectors/framed_device_status_request_v1.json",
+      "source_sha256": "a5b557d7e1f8f622b50a8d49a587a23f90a77185ea0e8ac5553d848fff566e0d",
+      "published_sha256": "a5b557d7e1f8f622b50a8d49a587a23f90a77185ea0e8ac5553d848fff566e0d"
+    },
+    {
+      "path": "software/third_party/nanopb/LICENSE.txt",
+      "source_sha256": "e2f2fc8fe3faa7dcb09dbe995db48c6ec5c1f72705db915101e4a83fed44f66d",
+      "published_sha256": "e2f2fc8fe3faa7dcb09dbe995db48c6ec5c1f72705db915101e4a83fed44f66d"
+    },
+    {
+      "path": "software/third_party/nanopb/README.md",
+      "source_sha256": "958333bbe1bd3cf2b3d3d34a5e78fa758b911ae0c4b58f51b33c535a139bca33",
+      "published_sha256": "958333bbe1bd3cf2b3d3d34a5e78fa758b911ae0c4b58f51b33c535a139bca33"
+    },
+    {
+      "path": "software/third_party/nanopb/UPSTREAM.json",
+      "source_sha256": "cc3c9fb04394be1d250272fc18d5ea2ebedc073339d860e8a29926790aa2e0f1",
+      "published_sha256": "cc3c9fb04394be1d250272fc18d5ea2ebedc073339d860e8a29926790aa2e0f1"
+    },
+    {
+      "path": "software/third_party/nanopb/pb.h",
+      "source_sha256": "a2ecdca9fdaeef5f4972ed983540c0d6fb0a5c402a2e0b0349d7e1bc5e188d29",
+      "published_sha256": "a2ecdca9fdaeef5f4972ed983540c0d6fb0a5c402a2e0b0349d7e1bc5e188d29"
+    },
+    {
+      "path": "software/third_party/nanopb/pb_common.c",
+      "source_sha256": "8d2ec28baaaf2b7a5e90e4cb2fa9700d21cef7f826f051a637c30b7a1e6a0516",
+      "published_sha256": "8d2ec28baaaf2b7a5e90e4cb2fa9700d21cef7f826f051a637c30b7a1e6a0516"
+    },
+    {
+      "path": "software/third_party/nanopb/pb_common.h",
+      "source_sha256": "6495a691aca68d6973f2274b5dd54b74fbb57f6b019c45fff255a857fe1abcfd",
+      "published_sha256": "6495a691aca68d6973f2274b5dd54b74fbb57f6b019c45fff255a857fe1abcfd"
+    },
+    {
+      "path": "software/third_party/nanopb/pb_decode.c",
+      "source_sha256": "6c2fc2f357bffdb774c1d329b533e981498d58405c0b1ef066f5a87fd46b5a17",
+      "published_sha256": "6c2fc2f357bffdb774c1d329b533e981498d58405c0b1ef066f5a87fd46b5a17"
+    },
+    {
+      "path": "software/third_party/nanopb/pb_decode.h",
+      "source_sha256": "1747746e5961de5789bcf0795588da0790cd18b2e4e706ad9c7099a0fa1cc83f",
+      "published_sha256": "1747746e5961de5789bcf0795588da0790cd18b2e4e706ad9c7099a0fa1cc83f"
+    },
+    {
+      "path": "software/third_party/nanopb/pb_encode.c",
+      "source_sha256": "d8dff2a1acc58683095a41b0dc3103ba46248e4a8d8c4e20f5810be04127b650",
+      "published_sha256": "d8dff2a1acc58683095a41b0dc3103ba46248e4a8d8c4e20f5810be04127b650"
+    },
+    {
+      "path": "software/third_party/nanopb/pb_encode.h",
+      "source_sha256": "9aa00fee4ff08adf0da16e33a55be08810ea657800a648dc78f82e89c60c10cf",
+      "published_sha256": "9aa00fee4ff08adf0da16e33a55be08810ea657800a648dc78f82e89c60c10cf"
+    },
+    {
+      "path": "software/tools/build_android.ps1",
+      "source_sha256": "03efe3ccec125aca3d643aec190440416181fcb7fd1c42478a55b25bffa0294c",
+      "published_sha256": "03efe3ccec125aca3d643aec190440416181fcb7fd1c42478a55b25bffa0294c"
+    },
+    {
+      "path": "software/tools/build_firmware.ps1",
+      "source_sha256": "88bb2f80fe19acf0d98d19efb0dd34ee9754843d0e98df3531f96fc11cb8aa09",
+      "published_sha256": "88bb2f80fe19acf0d98d19efb0dd34ee9754843d0e98df3531f96fc11cb8aa09"
+    },
+    {
+      "path": "software/tools/build_host.ps1",
+      "source_sha256": "997afa0851dce4de7d4f96ff39520363a7c31db7f1a2b7ac7fd8cde8e34b2210",
+      "published_sha256": "997afa0851dce4de7d4f96ff39520363a7c31db7f1a2b7ac7fd8cde8e34b2210"
+    },
+    {
+      "path": "software/tools/generate_auth_vectors.py",
+      "source_sha256": "1bda18cf855f489c038c6c1f69dc6520a0fa4de1df8069ef2908bcc7c0a1fb48",
+      "published_sha256": "1bda18cf855f489c038c6c1f69dc6520a0fa4de1df8069ef2908bcc7c0a1fb48"
+    },
+    {
+      "path": "software/tools/generate_nanopb.ps1",
+      "source_sha256": "d102d0edfb0bd62f38ef6bd8659a1b96cb166b86644bc004640558d190b8671a",
+      "published_sha256": "d102d0edfb0bd62f38ef6bd8659a1b96cb166b86644bc004640558d190b8671a"
+    },
+    {
+      "path": "software/tools/test_auth_platform.ps1",
+      "source_sha256": "b388920661bb6a28340513bbec2cad497574264d9b72c6386096aa0d2353041f",
+      "published_sha256": "b388920661bb6a28340513bbec2cad497574264d9b72c6386096aa0d2353041f"
+    },
+    {
+      "path": "software/tools/validate_baseline.py",
+      "source_sha256": "1ae8933c1a1d0f4683c2acc16a28705dc9949096be72c861b1b61c5cf95e5d46",
+      "published_sha256": "1ae8933c1a1d0f4683c2acc16a28705dc9949096be72c861b1b61c5cf95e5d46"
+    },
+    {
+      "path": "software/verification/W0/2026-09-12-hardware-identity-pending.md",
+      "source_sha256": "437c57bfa0ff37057461f42368a7fc2b11d424808eaa47afd9842e65ce6142fc",
+      "published_sha256": "437c57bfa0ff37057461f42368a7fc2b11d424808eaa47afd9842e65ce6142fc"
+    },
+    {
+      "path": "software/verification/W1/2026-09-12-round1.md",
+      "source_sha256": "fce54405b9d83904f87a88848da2c9f02020db22e16684e7e61564efe77553fc",
+      "published_sha256": "fce54405b9d83904f87a88848da2c9f02020db22e16684e7e61564efe77553fc"
+    },
+    {
+      "path": "software/verification/W1/2026-09-13-round2-host-build.md",
+      "source_sha256": "6594297f386d084a5a93ead59ddb69997c34d497db9af628925907491e703a17",
+      "published_sha256": "6594297f386d084a5a93ead59ddb69997c34d497db9af628925907491e703a17"
+    },
+    {
+      "path": "software/verification/W1/2026-09-18-round3-generated-protobuf.md",
+      "source_sha256": "eb2b059745e418c3e8fc2e0cb5831040d48e50ec6663015910113216ed3a6c0b",
+      "published_sha256": "eb2b059745e418c3e8fc2e0cb5831040d48e50ec6663015910113216ed3a6c0b"
+    },
+    {
+      "path": "software/verification/W1/2026-09-18-round4-nanopb-host.md",
+      "source_sha256": "91f60439b895c978ce8356e4c269c71d3899620d74a8a4f79abf3c224cc927af",
+      "published_sha256": "91f60439b895c978ce8356e4c269c71d3899620d74a8a4f79abf3c224cc927af"
+    },
+    {
+      "path": "software/verification/W1/2026-09-18-round5-firmware-protocol-component.md",
+      "source_sha256": "4061c52a60ed7c7726e1ec35b7b7579a112f432f17e99eda59a3192a65a7b065",
+      "published_sha256": "4061c52a60ed7c7726e1ec35b7b7579a112f432f17e99eda59a3192a65a7b065"
+    },
+    {
+      "path": "software/verification/W1/2026-09-18-round6-esp-idf-build.md",
+      "source_sha256": "ab486d75cfc96eab7234b50f240b63f33fdd81fedfd847c51ad9ca75b0050e99",
+      "published_sha256": "ab486d75cfc96eab7234b50f240b63f33fdd81fedfd847c51ad9ca75b0050e99"
+    },
+    {
+      "path": "software/verification/W1/2026-09-19-round7-firmware-protocol-codec.md",
+      "source_sha256": "d823a705bd4faa18b4440e8a3623c0a9782650abb6384b6c199928c9bb0858bb",
+      "published_sha256": "d823a705bd4faa18b4440e8a3623c0a9782650abb6384b6c199928c9bb0858bb"
+    },
+    {
+      "path": "software/verification/W1/2026-09-19-round8-session-replay-state.md",
+      "source_sha256": "8de9bf3bc3cdcf3630675d2b1375de25832a2a6b827315c2563f9b49a6a85e93",
+      "published_sha256": "8de9bf3bc3cdcf3630675d2b1375de25832a2a6b827315c2563f9b49a6a85e93"
+    },
+    {
+      "path": "software/verification/W1/2026-09-19-round9-stream-framing.md",
+      "source_sha256": "63d8645e8b9095b5195cc37f9127af255b5f2e2a679c4dba4152c2db257fef4e",
+      "published_sha256": "63d8645e8b9095b5195cc37f9127af255b5f2e2a679c4dba4152c2db257fef4e"
+    },
+    {
+      "path": "software/verification/W1/2026-09-20-round10-transport-ingress.md",
+      "source_sha256": "9957aeace792ced7a626ed93551b9b6585ccec7c7ae315c82ef44153c9af2d74",
+      "published_sha256": "9957aeace792ced7a626ed93551b9b6585ccec7c7ae315c82ef44153c9af2d74"
+    },
+    {
+      "path": "software/verification/W1/2026-09-20-round11-ble-ingress.md",
+      "source_sha256": "a649353378af5ccee07e816e28371d4548aae0080234e3f3f367702adfc1c154",
+      "published_sha256": "a649353378af5ccee07e816e28371d4548aae0080234e3f3f367702adfc1c154"
+    },
+    {
+      "path": "software/verification/W1/2026-09-20-round12-ble-notify.md",
+      "source_sha256": "374becbf98ecda35b9de7553ab52608d60e0ce08a3eab8f8556ee0e5e7f2d6f9",
+      "published_sha256": "374becbf98ecda35b9de7553ab52608d60e0ce08a3eab8f8556ee0e5e7f2d6f9"
+    },
+    {
+      "path": "software/verification/W1/2026-10-07-round13-owner-session.md",
+      "source_sha256": "d5848dee613998bd648b44803b0860673cde6a92efd7d9ea711e6905635455dd",
+      "published_sha256": "d5848dee613998bd648b44803b0860673cde6a92efd7d9ea711e6905635455dd"
+    },
+    {
+      "path": "software/verification/W1/2026-10-07-round14-auth-platform.md",
+      "source_sha256": "c518b2ac844a680c1114eca3ebd5b50a2e0d8042b2f25e2ad694b2dc7b4c3d2b",
+      "published_sha256": "c518b2ac844a680c1114eca3ebd5b50a2e0d8042b2f25e2ad694b2dc7b4c3d2b"
+    },
+    {
+      "path": "software/verification/W1/2026-10-07-round15-auth-wire.md",
+      "source_sha256": "c0dd63296c28b8f2fb13e8170405a7f39fb73636acc9c416a7c9b07d4c4d4679",
+      "published_sha256": "c0dd63296c28b8f2fb13e8170405a7f39fb73636acc9c416a7c9b07d4c4d4679"
+    },
+    {
+      "path": "software/verification/W1/2026-10-07-round16-numeric-comparison.md",
+      "source_sha256": "85f1098d9416da8af1ae6f1af09e00811b10055500df8bf815c32a0e09344bcd",
+      "published_sha256": "85f1098d9416da8af1ae6f1af09e00811b10055500df8bf815c32a0e09344bcd"
+    },
+    {
+      "path": "software/versions.json",
+      "source_sha256": "27e4909acbe819a71a8cbe62dedec2daf407d64ff9a6ae51057bfa2ae2c53874",
+      "published_sha256": "27e4909acbe819a71a8cbe62dedec2daf407d64ff9a6ae51057bfa2ae2c53874"
+    },
+    {
+      "path": "software/workflow/MII_软件开发与验证工作流_v1.0.md",
+      "source_sha256": "a9e49cc0a36474a2cbe23b6456e811deb7b7ffab7835f12d6b56de373df50545",
+      "published_sha256": "10d5c47928bfa6cccee0f9ed729648d3e473e797866edddf113ec82769c564ff"
+    }
+  ],
+  "published_hash_basis": "Git blob bytes in the initial public commit; text line endings may be normalized."
+}

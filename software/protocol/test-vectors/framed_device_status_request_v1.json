@@ -1,0 +1,12 @@
+{
+  "name": "framed_device_status_request_v1",
+  "framing_version": 1,
+  "flags": 0,
+  "payload_source": "device_status_request_v1.json",
+  "payload_wire_hex": "0a02080110011a0d4d49492d544553542d303030312001280130013a020801",
+  "payload_length": 31,
+  "header_crc16_ccitt_false": "0xf6ae",
+  "payload_crc32_ieee": "0xac7ceec8",
+  "expected_frame_wire_hex": "4d4901001f00aef6c8ee7cac0a02080110011a0d4d49492d544553542d303030312001280130013a020801",
+  "expected_frame_length": 43
+}

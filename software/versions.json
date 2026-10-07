@@ -1,0 +1,11 @@
+{
+  "status": "development",
+  "hardwareRevision": "V7",
+  "espIdfVersion": "5.5.5",
+  "firmwareVersion": "0.1.0-dev.7",
+  "protocolVersion": "1.0.0",
+  "templateFormatVersion": "0.1.0",
+  "templateRevision": 0,
+  "storageFormatVersion": "0.1.0",
+  "androidAppVersion": "0.1.0-dev.1"
+}

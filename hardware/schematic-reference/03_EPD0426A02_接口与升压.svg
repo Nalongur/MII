@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+  <defs>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#172033}
+      .title{font-size:34px;font-weight:700}.sub{font-size:18px;fill:#526078}.label{font-size:18px;font-weight:700}
+      .small{font-size:15px}.tiny{font-size:13px}.pin{font-size:14px}.box{fill:#fff;stroke:#26364d;stroke-width:2}
+      .ic{fill:#edf4ff;stroke:#305d9c;stroke-width:2.5}.note{fill:#fff7df;stroke:#d69a26;stroke-width:2}
+      .pwr{stroke:#d13b3b;stroke-width:3;fill:none}.hv{stroke:#a9299d;stroke-width:3;fill:none}
+      .sig{stroke:#2767b1;stroke-width:2.4;fill:none}.ctl{stroke:#16856b;stroke-width:2.4;fill:none}
+      .gnd{stroke:#222;stroke-width:2.2;fill:none}.dash{stroke-dasharray:8 6}.node{fill:#172033}
+      .net{font-size:14px;font-weight:700;fill:#185899}.hvtext{font-size:14px;font-weight:700;fill:#8a2181}
+    </style>
+  </defs>
+  <rect width="1800" height="1120" fill="#fcfdff"/>
+  <text x="55" y="58" class="title">03｜EPD0426A02 24Pin接口与SSD1677升压外围</text>
+  <text x="55" y="88" class="sub">4线SPI｜初版8 MHz｜BUSY高电平表示忙｜按OSPTEK T0426A02-A0转接板</text>
+
+  <!-- MCU interface -->
+  <rect x="55" y="150" width="330" height="280" rx="10" class="ic"/>
+  <text x="220" y="187" text-anchor="middle" class="label">ESP32-S3 接口</text>
+  <text x="85" y="230" class="small">GPIO7　→ EPD_BUSY</text>
+  <text x="85" y="264" class="small">GPIO8　→ EPD_RST</text>
+  <text x="85" y="298" class="small">GPIO9　→ EPD_DC</text>
+  <text x="85" y="332" class="small">GPIO10 → EPD_CS</text>
+  <text x="85" y="366" class="small">GPIO11 → EPD_MOSI/SDA</text>
+  <text x="85" y="400" class="small">GPIO12 → EPD_SCLK/SCL</text>
+  <line x1="385" y1="225" x2="610" y2="225" class="sig"/><text x="430" y="216" class="net">EPD_BUSY</text>
+  <line x1="385" y1="259" x2="610" y2="259" class="sig"/><text x="430" y="250" class="net">EPD_RST</text>
+  <line x1="385" y1="293" x2="610" y2="293" class="sig"/><text x="430" y="284" class="net">EPD_DC</text>
+  <line x1="385" y1="327" x2="610" y2="327" class="sig"/><text x="430" y="318" class="net">EPD_CS</text>
+  <line x1="385" y1="361" x2="610" y2="361" class="sig"/><text x="430" y="352" class="net">EPD_MOSI</text>
+  <line x1="385" y1="395" x2="610" y2="395" class="sig"/><text x="430" y="386" class="net">EPD_SCLK</text>
+
+  <!-- Connector -->
+  <rect x="1210" y="120" width="530" height="865" rx="12" class="ic"/>
+  <text x="1475" y="160" text-anchor="middle" class="label">J2 FH34SRJ-24S-0.5SH</text>
+  <text x="1475" y="185" text-anchor="middle" class="small">24Pin / 0.5 mm / 双接触 / 0.3 mm FPC</text>
+  <line x1="1360" y1="205" x2="1360" y2="955" stroke="#91a3bd" stroke-width="1"/>
+  <text x="1235" y="220" class="pin">1　NC</text>
+  <text x="1235" y="250" class="pin">2　GDR</text>
+  <text x="1235" y="280" class="pin">3　RESE</text>
+  <text x="1235" y="310" class="pin">4　NC</text>
+  <text x="1235" y="340" class="pin">5　VSH2</text>
+  <text x="1235" y="370" class="pin">6　GND</text>
+  <text x="1235" y="400" class="pin">7　GND</text>
+  <text x="1235" y="430" class="pin">8　BS（接GND）</text>
+  <text x="1235" y="460" class="pin">9　BUSY_N</text>
+  <text x="1235" y="490" class="pin">10 RST_N</text>
+  <text x="1235" y="520" class="pin">11 DC</text>
+  <text x="1235" y="550" class="pin">12 CSB</text>
+  <text x="1235" y="580" class="pin">13 SCL</text>
+  <text x="1235" y="610" class="pin">14 SDA</text>
+  <text x="1235" y="640" class="pin">15 VDDIO</text>
+  <text x="1235" y="670" class="pin">16 VCC</text>
+  <text x="1235" y="700" class="pin">17 VSS</text>
+  <text x="1235" y="730" class="pin">18 VDD</text>
+  <text x="1235" y="760" class="pin">19 VPP（NC）</text>
+  <text x="1235" y="790" class="pin">20 VSH1</text>
+  <text x="1235" y="820" class="pin">21 VGH</text>
+  <text x="1235" y="850" class="pin">22 VSL</text>
+  <text x="1235" y="880" class="pin">23 VGL</text>
+  <text x="1235" y="910" class="pin">24 VCOM</text>
+  <text x="1390" y="220" class="tiny">明确悬空</text>
+  <text x="1390" y="250" class="tiny">→ Q1 Gate / R1</text>
+  <text x="1390" y="280" class="tiny">→ Q1 Source / R2</text>
+  <text x="1390" y="340" class="tiny">C2 4.7µF/25V → GND</text>
+  <text x="1390" y="385" class="tiny">整面GND</text>
+  <text x="1390" y="430" class="tiny">4线SPI选择</text>
+  <text x="1390" y="460" class="tiny">高＝忙，低＝可写</text>
+  <text x="1390" y="640" class="tiny">3V3_MAIN</text>
+  <text x="1390" y="670" class="tiny">3V3_MAIN；C6 22µF＋C7 0.1µF</text>
+  <text x="1390" y="700" class="tiny">GND</text>
+  <text x="1390" y="730" class="tiny">C8 1µF → GND，不接3V3</text>
+  <text x="1390" y="790" class="tiny">C9 4.7µF/25V → GND</text>
+  <text x="1390" y="820" class="tiny">外接VGH；C10 1µF/25V → GND</text>
+  <text x="1390" y="850" class="tiny">C11 4.7µF/25V → GND</text>
+  <text x="1390" y="880" class="tiny">外接VGL；C12 1µF/25V → GND</text>
+  <text x="1390" y="910" class="tiny">C13 1µF/25V → GND</text>
+
+  <!-- signal hookups to connector -->
+  <line x1="610" y1="225" x2="1150" y2="225" class="sig"/><line x1="1150" y1="225" x2="1150" y2="455" class="sig"/><line x1="1150" y1="455" x2="1210" y2="455" class="sig"/>
+  <line x1="610" y1="259" x2="1125" y2="259" class="sig"/><line x1="1125" y1="259" x2="1125" y2="485" class="sig"/><line x1="1125" y1="485" x2="1210" y2="485" class="sig"/>
+  <line x1="610" y1="293" x2="1100" y2="293" class="sig"/><line x1="1100" y1="293" x2="1100" y2="515" class="sig"/><line x1="1100" y1="515" x2="1210" y2="515" class="sig"/>
+  <line x1="610" y1="327" x2="1075" y2="327" class="sig"/><line x1="1075" y1="327" x2="1075" y2="545" class="sig"/><line x1="1075" y1="545" x2="1210" y2="545" class="sig"/>
+  <line x1="610" y1="361" x2="1050" y2="361" class="sig"/><line x1="1050" y1="361" x2="1050" y2="605" class="sig"/><line x1="1050" y1="605" x2="1210" y2="605" class="sig"/>
+  <line x1="610" y1="395" x2="1025" y2="395" class="sig"/><line x1="1025" y1="395" x2="1025" y2="575" class="sig"/><line x1="1025" y1="575" x2="1210" y2="575" class="sig"/>
+
+  <!-- boost circuit -->
+  <rect x="55" y="500" width="1070" height="500" rx="12" class="box"/>
+  <text x="590" y="540" text-anchor="middle" class="label">SSD1677 外围升压／负压泵（照官方转接板抄绘）</text>
+
+  <!-- boost positive -->
+  <text x="85" y="615" class="net">3V3_MAIN</text><line x1="180" y1="610" x2="300" y2="610" class="pwr"/>
+  <line x1="230" y1="610" x2="230" y2="680" class="pwr"/><rect x="195" y="680" width="70" height="28" class="box"/><text x="230" y="700" text-anchor="middle" class="tiny">C4 22µF</text><line x1="230" y1="708" x2="230" y2="735" class="gnd"/><text x="245" y="736" class="tiny">GND</text>
+  <rect x="300" y="590" width="130" height="40" class="box"/><text x="365" y="616" text-anchor="middle" class="small">L1 10µH</text>
+  <line x1="430" y1="610" x2="550" y2="610" class="pwr"/><circle cx="550" cy="610" r="5" class="node"/><text x="510" y="595" class="tiny">SW节点</text>
+  <rect x="590" y="588" width="150" height="44" class="box"/><text x="665" y="606" text-anchor="middle" class="tiny">D3 SD103AWS</text><text x="665" y="624" text-anchor="middle" class="tiny">A → K</text>
+  <line x1="550" y1="610" x2="590" y2="610" class="pwr"/><line x1="740" y1="610" x2="870" y2="610" class="hv"/><text x="785" y="595" class="hvtext">VGH</text>
+  <line x1="835" y1="610" x2="835" y2="680" class="hv"/><rect x="790" y="680" width="90" height="28" class="box"/><text x="835" y="700" text-anchor="middle" class="tiny">C5 4.7µF/25V</text><line x1="835" y1="708" x2="835" y2="735" class="gnd"/><text x="850" y="736" class="tiny">GND</text>
+  <line x1="870" y1="610" x2="1125" y2="610" class="hv dash"/><text x="930" y="597" class="hvtext">→ J2 pin21 VGH + TP_VGH</text>
+
+  <!-- MOSFET drive -->
+  <rect x="475" y="655" width="150" height="80" rx="6" class="ic"/>
+  <text x="550" y="680" text-anchor="middle" class="small">Q1 2N7002K</text>
+  <text x="550" y="702" text-anchor="middle" class="tiny">D=SW｜G=GDR｜S=RESE</text>
+  <line x1="550" y1="610" x2="550" y2="655" class="pwr"/>
+  <line x1="475" y1="695" x2="410" y2="695" class="ctl"/><text x="345" y="700" class="net">GDR</text>
+  <rect x="330" y="720" width="80" height="28" class="box"/><text x="370" y="740" text-anchor="middle" class="tiny">R1 10k</text><line x1="370" y1="695" x2="370" y2="720" class="ctl"/><line x1="370" y1="748" x2="370" y2="775" class="gnd"/><text x="385" y="777" class="tiny">GND</text>
+  <line x1="550" y1="735" x2="550" y2="780" class="ctl"/><text x="565" y="765" class="net">RESE</text><rect x="515" y="780" width="70" height="28" class="box"/><text x="550" y="800" text-anchor="middle" class="tiny">R2 2.2Ω</text><line x1="550" y1="808" x2="550" y2="835" class="gnd"/><text x="565" y="837" class="tiny">GND</text>
+  <line x1="410" y1="695" x2="410" y2="550" class="ctl dash"/><text x="275" y="565" class="net">← J2 pin2 GDR + TP_GDR</text>
+  <line x1="585" y1="765" x2="680" y2="765" class="ctl dash"/><text x="690" y="770" class="net">→ J2 pin3 RESE + TP_RESE</text>
+
+  <!-- negative pump -->
+  <line x1="550" y1="610" x2="550" y2="870" class="pwr dash"/>
+  <rect x="600" y="850" width="115" height="40" class="box"/><text x="657" y="868" text-anchor="middle" class="tiny">C3 4.7µF/25V</text><text x="657" y="885" text-anchor="middle" class="tiny">泵电容</text>
+  <line x1="550" y1="870" x2="600" y2="870" class="pwr"/><line x1="715" y1="870" x2="760" y2="870" class="hv"/><circle cx="760" cy="870" r="5" class="node"/><text x="725" y="850" class="tiny">PUMP</text>
+  <rect x="760" y="910" width="145" height="42" class="box"/><text x="832" y="928" text-anchor="middle" class="tiny">D2 SD103AWS</text><text x="832" y="946" text-anchor="middle" class="tiny">A=PUMP，K=GND</text>
+  <line x1="760" y1="870" x2="760" y2="931" class="hv"/><line x1="905" y1="931" x2="945" y2="931" class="gnd"/><text x="950" y="936" class="tiny">GND</text>
+  <rect x="800" y="820" width="145" height="42" class="box"/><text x="872" y="838" text-anchor="middle" class="tiny">D1 SD103AWS</text><text x="872" y="856" text-anchor="middle" class="tiny">A=VGL，K=PUMP</text>
+  <line x1="760" y1="870" x2="800" y2="841" class="hv"/><line x1="945" y1="841" x2="1070" y2="841" class="hv"/><text x="985" y="826" class="hvtext">VGL</text>
+  <line x1="1020" y1="841" x2="1020" y2="900" class="hv"/><rect x="975" y="900" width="90" height="28" class="box"/><text x="1020" y="920" text-anchor="middle" class="tiny">C1 4.7µF/25V</text><line x1="1020" y1="928" x2="1020" y2="955" class="gnd"/><text x="1035" y="957" class="tiny">GND</text>
+  <line x1="1070" y1="841" x2="1125" y2="841" class="hv dash"/><text x="945" y="805" class="hvtext">→ J2 pin23 VGL + TP_VGL</text>
+
+  <!-- notes -->
+  <rect x="55" y="1020" width="1685" height="65" rx="8" class="note"/>
+  <text x="80" y="1048" class="small">关键：EPD高压回路必须紧靠FPC；L1、Q1、D1～D3、C1/C3/C5走线最短。VGH/VGL/VSH1/VSH2/VCOM均留测试点。</text>
+  <text x="80" y="1073" class="small">金手指位于显示正面；即使使用双接触座，Pin 1方向仍按屏幕正视机械图确认，禁止凭肉眼镜像。</text>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MII</string>
+    <string name="tagline">记录身边，展示所想</string>
+    <string name="device">设备</string>
+    <string name="design">设计</string>
+    <string name="data">数据</string>
+    <string name="settings">设置</string>
+    <string name="unbound_title">尚未绑定设备</string>
+    <string name="unbound_body">绑定时，请核对手机与 MII 屏幕上的六位验证码，再在设备上按键确认。</string>
+    <string name="templates_empty">还没有模板</string>
+    <string name="templates_body">你的展示页面将在这里保存。</string>
+    <string name="records_empty">还没有同步记录</string>
+    <string name="records_body">同步后的环境记录与运动轨迹将在这里保存。</string>
+    <string name="local_title">本地数据空间</string>
+    <string name="local_body">模板和同步记录保存在这台手机上。</string>
+    <string name="version">应用版本 %1$s</string>
+</resources>

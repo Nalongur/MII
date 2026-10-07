@@ -1,0 +1,18 @@
+# nanopb bounds for the first control-plane envelope.
+# This file is consumed automatically when nanopb generates mii.pb.[ch].
+mii.protocol.v1.Envelope.device_id max_length:32
+mii.protocol.v1.Envelope.payload max_size:512
+mii.protocol.v1.BindingProposal.owner_id max_size:16
+mii.protocol.v1.BindingProposal.owner_key max_size:32
+mii.protocol.v1.BindingProposal.https_token max_size:32
+mii.protocol.v1.BindingProposal.certificate_sha256 max_size:32
+mii.protocol.v1.BindingAccepted.owner_id max_size:16
+mii.protocol.v1.SessionHello.owner_id max_size:16
+mii.protocol.v1.SessionHello.client_nonce max_size:32
+mii.protocol.v1.SessionChallenge.device_nonce max_size:32
+mii.protocol.v1.SessionChallenge.device_proof max_size:32
+mii.protocol.v1.SessionProof.client_proof max_size:32
+mii.protocol.v1.SessionReady.session_id max_size:16
+mii.protocol.v1.AuthenticatedEnvelope.session_id max_size:16
+mii.protocol.v1.AuthenticatedEnvelope.canonical_envelope max_size:512
+mii.protocol.v1.AuthenticatedEnvelope.authentication_tag max_size:32

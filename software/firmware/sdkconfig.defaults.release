@@ -1,0 +1,4 @@
+# Release profile: optimize for the constrained N8 flash/RAM target.
+CONFIG_COMPILER_OPTIMIZATION_SIZE=y
+# CONFIG_MII_PROTOCOL_STARTUP_SELF_TEST is not set
+# CONFIG_MII_BLE_CONTROL_SERVICE is not set
