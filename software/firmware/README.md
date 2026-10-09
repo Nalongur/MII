@@ -34,7 +34,7 @@ dependency uses the corresponding `esp_driver_gpio` component name.
   quarantined until an authenticated application session exists.
 
 All other pins remain at their reset defaults. No display, sensor, GNSS,
-display, sensor, GNSS, storage-format, or shutdown behavior is implemented in
+storage-format, or shutdown behavior is implemented in
 this baseline. The BLE radio path has not been exercised on hardware.
 
 The `mii_protocol` ESP-IDF component compiles committed nanopb 0.4.9.1 types,
@@ -42,8 +42,7 @@ the vendored minimal runtime, and the same codec sources exercised by the host
 tests. The host build regenerates the types from `protocol/mii.proto`, rejects
 any drift from the committed component sources, and checks fixed-vector parity,
 invalid inputs, truncated input, unsupported versions, and unknown fields.
-Debug and Release ESP32-S3 images were both successfully rebuilt with ESP-IDF
-5.5.5 through the twelfth development round. The session state is deliberately RAM
+The session state is deliberately RAM
 only and must be reset whenever the future authentication layer opens a new
 session; it is not a substitute for authentication or message integrity.
 
@@ -72,11 +71,10 @@ idf.py -B build-release '-DSDKCONFIG_DEFAULTS=sdkconfig.defaults.v7_n8;sdkconfig
 
 The build output directories are deliberately ignored by Git. A successful
 image build is not a substitute for checking PSHOLD, EPD CS, LED, and GNSS_EN
-levels on the physical board; no device has been flashed in this workspace.
+levels on the physical board. Hardware operation is not verified by this source release.
 
-## Draft partition boundary
+## Storage limitation
 
-The partition CSV ends at `0x800000`. The single `mii_data` entry is only a W1
-capacity placeholder; W6 must split/freeze template, temporary-download, ring
-record, and diagnostic storage after measuring real firmware images and data
-retention needs.
+The partition CSV ends at `0x800000`. The single `mii_data` entry reserves
+capacity; template storage, downloads, record retention and diagnostics are
+not implemented in this source release.

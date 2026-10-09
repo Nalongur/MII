@@ -115,12 +115,12 @@ and Android Keystore-backed credential persistence. HMAC-based NVS protection
 uses an eFuse key; its default initialization can generate/burn a missing key.
 This project must instead read an existing security configuration and fail
 closed if it is absent. No automatic eFuse provisioning or flash encryption
-activation is authorized in this software-only work. Host storage fault tests
+activation is performed by the component. Host storage fault tests
 do not prove physical flash protection or resistance to flash rollback.
 
 Before business RX is enabled: implement and verify Numeric Comparison display
 and device-button delivery, protected persistence, both endpoint proofs, MAC
-envelopes, lifecycle generation checks, response/ACK/idempotency, and W0-approved
+envelopes, lifecycle generation checks, response/ACK/idempotency, and controlled
 target tests. An isolated core or a successful build does not release this gate.
 
 ## Primary references

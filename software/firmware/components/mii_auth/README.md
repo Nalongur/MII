@@ -14,7 +14,7 @@ boot behavior or activate BLE. The mbedTLS port reuses one checked bounded conte
 and replaces old HMAC key pads with zero-key pads after each operation. The RNG
 adapter requires an enabled BLE controller; host RNG stubs are plumbing only.
 
-`IdfOwnerStore` exclusively owns the draft `mii_auth` NVS partition at
+`IdfOwnerStore` exclusively owns the dedicated `mii_auth` NVS partition at
 `0x12000`/`0x3000`, using formerly unused alignment space before OTA. Existing
 partition offsets/capacities are unchanged. It requires a pre-provisioned HMAC_UP
 key ID supplied by local configuration, reads its security configuration, removes

@@ -1,6 +1,6 @@
 # MII 协议基线
 
-状态：第十二轮 BLE 收发传输基线，协议版本 `1.0.0`、帧版本 `1`。当前文件用于固定字段号、nanopb 边界、编解码向量、会话内重放策略、传输帧格式与入口超时策略，不代表 W1 协议退出门槛已经通过。
+协议版本 `1.0.0`、帧版本 `1`。本目录定义字段号、nanopb 容量边界、编解码向量、重放策略、传输帧格式与入口超时规则。
 
 ## 文件
 
@@ -9,6 +9,7 @@
 - `test-vectors/device_status_request_v1.json`：C/C++ 与 Kotlin 必须共同复现的确定性 wire 向量。
 - `framing_v1.md`：传输无关的固定帧头、CRC、分片、重同步与超时契约。
 - `test-vectors/framed_device_status_request_v1.json`：包裹相同 Envelope 的确定性完整帧向量。
+- `authentication_v1.md` / `test-vectors/authentication_v1.json`：所有者绑定、认证会话与固定认证向量。
 - `host-tests/cpp`：可由 Zig/Clang 构建的独立 C++ 最小 wire 编码检查。
 - `host-tests/nanopb`：编译固件中的真实 C++ 编解码层，验证固定向量、边界错误、截断数据和未知字段。
 - `host-tests/session`：直接编译固件会话状态实现，验证编号、重试、乱序、重放、淘汰、溢出和重置。
@@ -95,12 +96,6 @@ DeviceStatusRequest { include_runtime_counters: true }
 
 固件 `FrameIngress` 将无进展截止时间固定为 2,000 ms，使用调用方提供的 32 位单调毫秒计数，并支持正常回绕。业务处理器在 `consume()` 内同步执行，返回后不得保留 payload 指针；断连或新会话必须调用 `reset_session()`。
 
-## 尚未验证
+## 使用限制
 
-Kotlin/JVM、固件 C++ 编解码层、会话层、帧层、BLE 收发会话与两种 ESP-IDF 配置均已通过构建；另有一次临时启用 BLE 服务的 ESP-IDF 完整链接构建通过。Debug 镜像中也已链接启动自检。但尚未烧录，因此不宣称目标板已执行该自检。W1 完成前仍需：
-
-1. 完成 W0 实物身份和关键电平复核后，进行首次受控烧录并保存启动日志。
-2. 确认固定向量、会话状态和流式帧自检在 ESP32-S3 目标板实际运行通过。
-3. 建立 Android 工程，在 Android 单元测试中复用 Kotlin 生成配置和固定向量。
-4. 设计认证层，把 RAM 会话状态绑定到真实会话；认证完成前继续隔离 RX 命令，并禁止把当前 TX 骨架视为可信响应通道。
-5. 在受控 V7 实物测试中验证广播、配对、MTU 交换、CCCD 加密门、真实通知拥塞、断连清理及 Android 互操作；主机和镜像构建不能替代 BLE/Wi-Fi 端到端验证。
+BLE 服务默认关闭，RX 业务命令仍被隔离；认证核心尚未完整接入设备显示、按键和无线业务。主机向量测试和构建检查不能替代目标板、射频或 Android 端到端验证。

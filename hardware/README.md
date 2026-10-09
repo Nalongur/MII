@@ -1,15 +1,11 @@
-# MII 硬件资料
+# MII 硬件支持范围
 
-当前软件面向 V7 实物板。`docs/` 保留不同阶段的接线与布局设计说明，`schematic-reference/` 为早期 SVG 接线参考。
+固件面向 MII V7：ESP32-S3-MINI-1-N8（8 MB Flash，无 PSRAM）、EPD0426A02 墨水屏、BME280 和 E108-GN07IS GNSS 模块。
 
-- [详细接线逻辑](docs/详细接线逻辑_v0.3.md)
-- [V7 六层 PCB 接线与布局说明](docs/MII_V7_六层PCB详细接线与布局说明_v1.0.md)
-- [原理图设计依据](docs/原理图设计依据_v0.1.md)
-- [PCB 布局约束](docs/PCB布局约束_v0.1.md)
-- [SVG 参考说明](schematic-reference/README.md)
+当前仓库未提供可制造的硬件发布包，无法据此直接投板或装配。PCB 原生工程、Gerber、装配文件和制造 BOM 尚未发布。
 
-不同历史版本之间可能存在差异，不能合并为同一已验证生产基线。当前 EasyEDA 原生工程、最新 PCB、Gerber、装配文件和制造 BOM 尚未纳入此次公开快照。上述资料不能作为投板或上电放行证明。
+软件中的 GPIO 定义见 [board_v7.hpp](../software/firmware/components/board_v7/include/mii/board_v7.hpp)，构建配置见 [固件说明](../software/firmware/README.md)。实际接线、供电和器件版本仍需与所用板卡核对。
 
-器件规格书与屏幕示例来源见 [第三方资料说明](../docs/third-party.md)。
+屏幕原厂资料来源见 [第三方资料说明](../docs/third-party.md)。
 
 本目录项目自有硬件设计资料采用 [CERN-OHL-P-2.0](../LICENSES/CERN-OHL-P-2.0.txt)。来源地址：<https://github.com/Nalongur/MII/tree/main/hardware>。

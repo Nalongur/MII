@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [string]$AndroidSdkPath = (Join-Path $env:LOCALAPPDATA 'Android\Sdk'),
-    [string]$JdkPath = 'C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot',
+    [string]$JdkPath = $env:JAVA_HOME,
     [switch]$Offline
 )
 $ErrorActionPreference = 'Stop'
@@ -11,6 +11,7 @@ foreach ($requiredFile in @('platforms\android-36\android.jar','build-tools\36.0
         throw "Required pinned Android SDK file missing: $requiredFile"
     }
 }
+if (-not $JdkPath) { throw 'Set JAVA_HOME to JDK 21 or pass -JdkPath.' }
 if (-not (Test-Path -LiteralPath (Join-Path $JdkPath 'bin\java.exe'))) { throw 'Configured JDK is missing.' }
 $previousJavaHome = $env:JAVA_HOME
 $previousAndroidHome = $env:ANDROID_HOME

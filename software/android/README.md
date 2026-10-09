@@ -10,11 +10,11 @@
 - Kotlin/Compose compiler plugin 2.1.10；Compose BOM 2025.02.00
   （UI/runtime/foundation 1.7.8，Material3 1.3.1）；Activity Compose 1.10.1。
 - compile/target SDK 36、min SDK 26、build-tools 36.0.0。
-- 本机 JDK 21 执行 Gradle，Java/Kotlin bytecode 17。
+- 使用 JDK 21 执行 Gradle，Java/Kotlin bytecode 17。
 - 复用 protobuf plugin 0.9.4、protoc 3.24.4，Android javalite 3.24.4。
   只从 `../protocol/mii.proto` 生成，不保存第二份 schema/生成类型。
 
-实施前官方/GitHub来源、许可和采用理由见 `../docs/reuse-decisions.md`。
+依赖来源与许可见 [第三方依赖说明](../../docs/third-party.md)。
 Gradle/AGP/Kotlin/AndroidX/protobuf plugin 为 Apache-2.0，protobuf runtime/protoc
 为 BSD-3-Clause，JUnit 4.13.2 为 EPL-1.0；无样例 App 整体移植。
 
@@ -34,4 +34,4 @@ Debug 使用本地开发签名，Release 输出未签名 APK，不借用 Debug �
 
 测试直接 staging 既有 `AuthVectorCheck.kt` 和真实固定向量，校验八类认证及 HMAC；
 Android lite 单独核对旧 31 B Envelope 和未知字段保留。JVM 单元测试不等于 Android
-Keystore、界面、手机配对或协议端到端验证。未安装、启动模拟器或操作手机。
+Keystore、界面、手机配对或协议端到端验证。
