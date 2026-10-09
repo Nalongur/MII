@@ -15,6 +15,28 @@ Desktop.ini
 *.bak
 *.old
 
+# Internal development material must not enter the public source tree.
+/docs/
+/workflow/
+/verification/
+**/drafts/
+**/scratch/
+**/audit/
+**/audits/
+**/handoff/
+**/reports/
+**/outputs/
+**/tmp/
+**/temp/
+**/backups/
+**/.codex*/
+**/AGENTS.md
+**/CLAUDE.md
+**/MEMORY.md
+**/SKILL.md
+*_draft.*
+*_草稿.*
+
 # Local secrets and machine-specific configuration
 .env
 .env.*

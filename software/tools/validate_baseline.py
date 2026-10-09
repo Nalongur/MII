@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the lightweight MII V7 W1 repository baseline.
+"""Validate the MII V7 source tree and static configuration.
 
 This script intentionally uses only the Python standard library.  It checks
 repository structure and static configuration; it does not claim that the
@@ -390,14 +390,12 @@ def expected_vector_hex(document: Mapping[str, Any]) -> str:
 
 
 def check_repository_structure(validation: Validation) -> None:
-    for directory_name in ("firmware", "android", "protocol", "tools", "verification"):
+    for directory_name in ("firmware", "android", "protocol", "tools"):
         path = REPOSITORY_ROOT / directory_name
         validation.check(path.is_dir(), f"directory {directory_name}/ exists", str(path))
 
     required_files = (
         REPOSITORY_ROOT / "README.md",
-        REPOSITORY_ROOT / "docs" / "MII_整体软件设计说明_v1.0.md",
-        REPOSITORY_ROOT / "workflow" / "MII_软件开发与验证工作流_v1.0.md",
         VERSIONS_FILE,
         SDKCONFIG_FILE,
         DEBUG_SDKCONFIG_FILE,
@@ -1778,7 +1776,7 @@ def check_protected_owner_store(validation: Validation) -> None:
 
 
 def main() -> int:
-    print(f"MII W1 baseline validation: {REPOSITORY_ROOT}")
+    print(f"MII source validation: {REPOSITORY_ROOT}")
     print()
     validation = Validation()
     check_repository_structure(validation)

@@ -7,7 +7,7 @@ Copyright (c) 2026 Nalongur
 - Original hardware design materials and documentation under hardware/:
   CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0).
   Full text: LICENSES/CERN-OHL-P-2.0.txt
-- Original repository introduction and publication documentation under docs/
+- Original repository introduction and dependency documentation under docs/
   and at the repository root: MIT, except the license texts themselves.
 
 Third-party code, build tools, generated files containing upstream notices,
