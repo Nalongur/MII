@@ -49,3 +49,6 @@ LICENSE text eol=lf
 *.pdf binary
 *.zip binary
 *.jar binary
+
+# Keep executable Git hooks usable on every platform.
+.githooks/* text eol=lf
