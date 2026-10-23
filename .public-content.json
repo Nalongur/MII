@@ -1,0 +1,13 @@
+{
+  "public_emails": [],
+  "private_path_prefixes": [
+    "hardware/docs/",
+    "hardware/schematic-reference/",
+    "software/docs/",
+    "software/workflow/",
+    "software/verification/",
+    "docs/publication.md",
+    "docs/source-manifest.json"
+  ],
+  "allowed_binary_paths": []
+}

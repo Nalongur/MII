@@ -109,3 +109,34 @@ software/firmware/sdkconfig.old
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Public-content boundary: local work, drafts and private configuration
+**/drafts/
+**/scratch/
+**/verification/
+**/workflow/
+**/handoff/
+**/audits/
+**/reports/
+**/_private-backups/
+**/.codex*/
+**/AGENTS.md
+**/CLAUDE.md
+**/MEMORY.md
+**/local.properties
+**/keystore.properties
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.jks
+*.keystore
+*.log
+
+# Public safety tooling
+!/.public-content.json
+!/PUBLIC_CONTENT.md
+!/.githooks/
+!/.github/
+!/tools/
